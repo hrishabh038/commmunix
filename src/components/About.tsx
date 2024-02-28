@@ -1,56 +1,91 @@
-import React from 'react'
-import AboutCard from "./AboutCard"
+import React from "react";
+import AboutCard from "./AboutCard";
+import { ourMission, ourValues, shreya } from "@/assects/assects";
+import Image from "next/image";
 
-type Props = {}
+type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="flex flex-col gap-14 items-center">
-            <div className="flex flex-col sm:flex-row items-center gap-8">
-              <div className="border bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-video rounded-lg"></div>
-              <div className="flex flex-col gap-4">
-                <h1 className="text-xl font-semibold leading-8">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-                  nobis nulla eveniet doloribus obcaecati fugiat!
-                </h1>
-                <p className="text-sm text-neutral-500 leading-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                  quae nostrum expedita quibusdam dolorem consequatur porro nam
-                  debitis deleniti neque, officia, eos aperiam. Autem sint
-                  dignissimos labore repudiandae nisi possimus iusto
-                  exercitationem. Cum maxime asperiores, omnis ipsum,
-                  accusantium, expedita reiciendis qui quis adipisci nihil fugit
-                  iste veniam eveniet? Recusandae, iste?
-                </p>
-              </div>
-            </div>
+    <div className="flex flex-col gap-24 items-center">
+      <div className="flex flex-col sm:flex-row items-center gap-8">
+        <div className="relative bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-square rounded-lg ">
+          <Image
+            className="rounded-lg"
+            src={shreya}
+            alt="Shreya"
+            fill
+          />
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-xl font-bold leading-8 tracking-wide">
+            Story of communix
+          </h1>
+          <p className="text-lg text-neutral-500 leading-8">
+            At Commmunix, we started as a small business with a big dream. Our
+            founder,{" "}
+            <span className="text-orange-500 font-semibold">
+              Shreya Choudhary
+            </span>
+            , had a vision to create a company that would revolutionize the
+            industry. With hard work and dedication, we have grown into the
+            successful business we are today.
+          </p>
+        </div>
+      </div>
 
-            <div className="flex  flex-col-reverse sm:flex-row items-center gap-8">
-              <div className="flex flex-col gap-4">
-                <h1 className="text-xl font-semibold leading-8">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-                  nobis nulla eveniet doloribus obcaecati fugiat!
-                </h1>
-                <p className="text-sm text-neutral-500 leading-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                  quae nostrum expedita quibusdam dolorem consequatur porro nam
-                  debitis deleniti neque, officia, eos aperiam. Autem sint
-                  dignissimos labore repudiandae nisi possimus iusto
-                  exercitationem. Cum maxime asperiores, omnis ipsum,
-                  accusantium, expedita reiciendis qui quis adipisci nihil fugit
-                  iste veniam eveniet? Recusandae, iste?
-                </p>
-              </div>
-              <div className="border bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-video rounded-lg"></div>
-            </div>
+      <div className="flex  flex-col-reverse sm:flex-row items-center gap-8">
+        <div className="flex flex-col gap-4">
+          <h1 className="text-xl font-bold leading-8 tracking-wide">
+            Our values at Commmunix
+          </h1>
+          <p className="text-lg text-neutral-500 leading-8">
+            Our values are the foundation of everything we do. We believe in
+            honesty, integrity, and transparency in all our dealings with our
+            customers. We are committed to providing exceptional customer
+            service and delivering on our promises.
+          </p>
+        </div>
+        <div className="relative border bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-video rounded-lg  shadow-xl">
+          <Image
+            className="rounded-lg"
+            src={ourValues}
+            alt="Our Values"
+            fill
+          />
+        </div>
+      </div>
 
-            <div className="flex flex-wrap items-start justify-center gap-6 pt-8">
-              <AboutCard />
-              <AboutCard />
-              <AboutCard />
-            </div>
-          </div>
-  )
-}
+      <div className="flex flex-col sm:flex-row items-center gap-8">
+        <div className="relative border bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-video rounded-lg  shadow-xl">
+          <Image
+            className="rounded-lg"
+            src={ourMission}
+            alt="Our Mission"
+            fill
+          />
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-xl font-bold leading-8 tracking-wide">
+            Our mission at Commmunix
+          </h1>
+          <p className="text-lg text-neutral-500 leading-8">
+            Our mission at Commmunix is to provide superior products and
+            services to our customers, while maintaining the highest standards
+            of quality and professionalism. We are committed to building lasting
+            relationships with our clients, and working together to achieve
+            success.
+          </p>
+        </div>
+      </div>
 
-export default About
+      <div className="flex flex-wrap items-start justify-center gap-6 pt-12">
+        <AboutCard />
+        <AboutCard />
+        <AboutCard />
+      </div>
+    </div>
+  );
+};
+
+export default About;
