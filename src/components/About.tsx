@@ -9,7 +9,7 @@ const About = (props: Props) => {
   return (
     <div className="flex flex-col gap-24 items-center">
       <div className="flex flex-col sm:flex-row items-center gap-8">
-        <div className="relative bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-square rounded-lg ">
+        <div className="relative bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-square rounded-lg  shadow-lg">
           <Image
             className="rounded-lg"
             src={shreya}
