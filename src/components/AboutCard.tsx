@@ -5,7 +5,7 @@ type Props = {}
 
 const AboutCard = (props: Props) => {
   return (
-    <div className="border rounded-lg flex flex-col items-center gap-2 justify-center w-full sm:w-[300px] p-2 hover:bg-neutral-100 cursor-pointer">
+    <div className="rounded-lg flex flex-col items-center gap-2 justify-center w-full">
                 <AudioWaveform className="text-purple-400 w-full w-[50px] h-[50px]" />
                 <h1 className=" text-lg font-semibold">
                   Lorem ipsum dolor sit ame

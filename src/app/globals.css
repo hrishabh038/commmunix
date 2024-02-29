@@ -14,5 +14,8 @@ body,
   @apply bg-gradient-to-tl from-purple-500 to-orange-500 hover:from-orange-500 hover:to-purple-500 duration-200;
 }
 .bg_company_gradient_only {
-  @apply bg-gradient-to-tl from-purple-500 to-orange-500 ;
+  @apply bg-gradient-to-tl from-purple-500 to-orange-500;
+}
+.banner-bg {
+  background: linear-gradient(to right, rgb(65, 65, 239) 15%, rgba(128, 0, 128, 0) 100%);
 }

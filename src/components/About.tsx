@@ -9,7 +9,7 @@ const About = (props: Props) => {
   return (
     <div className="flex flex-col gap-24 items-center">
       <div className="flex flex-col sm:flex-row items-center gap-8">
-        <div className="relative bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-square rounded-lg  shadow-lg">
+        <div className="relative bg-black/15 w-full sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] aspect-square rounded-lg">
           <Image
             className="rounded-lg"
             src={shreya}
@@ -79,11 +79,11 @@ const About = (props: Props) => {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-start justify-center gap-6 pt-12">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-8 md:gap-6">
         <AboutCard />
         <AboutCard />
         <AboutCard />
-      </div>
+      </div> */}
     </div>
   );
 };
