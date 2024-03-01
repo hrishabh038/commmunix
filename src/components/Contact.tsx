@@ -17,15 +17,15 @@ const Contact = (props: Props) => {
           <p className="text-neutral-500 text-lg">
             We strive to stay in communication with our clients. Have a question
             about our business, or want to see if we match your specific needs?
-            Send us a message, or give us a call. We're always happy to meet new
+            Send us a message, or give us a call. We&apos;re always happy to meet new
             customers!
           </p>
           <WhatsappBtn />
         </div>
         <div className="bg-neutral-100 w-full h-full p-4 rounded-lg border flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <h1 className="text-neutral-300 font-bold">Location</h1>
-            <p className=" text-neutral-400 text-xl">
+            <h1 className="text-neutral-300 font-bold text-xs">Location</h1>
+            <p className=" text-neutral-400">
               Commmunix India, Jayadev Vihar Road, Block N6, IRC Village,
               Jayadev Vihar, Bhubaneswar, Odisha, India
             </p>

@@ -2,7 +2,7 @@ import { whatsapp } from "@/assects/assects";
 import Image from "next/image";
 import React from "react";
 
-type Props = { text: string };
+type Props = { text?: string };
 
 const WhatsappBtn = (props: Props) => {
   return (

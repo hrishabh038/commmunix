@@ -1,4 +1,4 @@
-export {default as logo} from "./logo.jpg"
+export {default as logo} from "./logo.png"
 export {default as whatsapp} from "./whatsapp.jpg"
 export {default as ourValues} from "./ourvalues.webp"
 export {default as ourMission} from "./ourmission.webp"

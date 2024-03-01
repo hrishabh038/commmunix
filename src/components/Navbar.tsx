@@ -11,9 +11,11 @@ const Navbar = (props: Props) => {
         <div className="relative w-[90px] h-[70px]">
           <Image fill src={logo} alt="logo" />
         </div>
-        <button className="scale-105 hover:scale-100 bg_company_gradient text-white rounded-lg px-4 py-2 hidden sm:block">
+        <a href="mailto:info@commmunix.com">
+          <button className="scale-105 hover:scale-100 bg_company_gradient text-white rounded-lg px-4 py-2 hidden sm:block">
             Contact Us
-        </button>
+          </button>
+        </a>
       </div>
     </nav>
   );

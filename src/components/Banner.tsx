@@ -9,7 +9,7 @@ const Banner = (props: Props) => {
   return (
     <div className="relative rounded-lg border bg-black/15 w-full h-[500px]">
       <Image
-        className="rounded-lg bg-cover"
+        className="rounded-lg bg-contain"
         src={bhuvneshwar}
         alt="Bhuvneshwar"
         fill
@@ -22,9 +22,11 @@ const Banner = (props: Props) => {
           <h1 className="text-2xl md:text-4xl font-bold">
             Transforming your business with innovative solutions
           </h1>
-          <button className="scale-110 hover:scale-105 bg_company_gradient text-white rounded-lg px-4 py-2 w-fit mt-5">
-            Contact Us
-          </button>
+          <a href="mailto:info@commmunix.com">
+            <button className="scale-110 hover:scale-105 bg_company_gradient text-white rounded-lg px-4 py-2 w-fit mt-5">
+              Contact Us
+            </button>
+          </a>
         </div>
       </div>
     </div>
