@@ -15,7 +15,7 @@ const Banner = (props: Props) => {
         fill
       />
       <div className="absolute w-full h-full bg-white/15 rounded-lg banner-bg  flex flex-col justify-center p-4 sm:p-6 md:p-10">
-        <div className="text-white w-full sm:w-[500px] flex flex-col gap-4">
+        <div className="text-white w-full sm:w-[500px] flex flex-col justify-center items-center sm:items-start text-center sm:text-start gap-4">
           <p className="text-base md:text-lg font-semibold">
             We provide customized solutions that fit your unique business needs.
           </p>
