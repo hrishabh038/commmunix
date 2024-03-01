@@ -19,7 +19,7 @@ type Props = {};
 const Services = (props: Props) => {
   return (
     <div className="bg-neutral-100 pt-8 p-4 gap-12 flex flex-col rounded-lg border">
-      <Heading smText="what we offer" title="Services we provide" para="" />
+      <Heading title="Services we provide" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <ServiceCard
           icon={Globe}
