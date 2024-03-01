@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Heading from "@/components/Heading";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Roboto({
+  weight: "300",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Commmunix",
@@ -19,12 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <main>
           <Navbar />
-          <div className="w-full py-[125px] px-4">
-           {children}
-          </div>
+          <div className="w-full py-[125px] px-4">{children}</div>
           <Footer />
         </main>
       </body>

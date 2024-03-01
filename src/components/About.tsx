@@ -19,7 +19,7 @@ const About = (props: Props) => {
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-xl font-bold leading-8 tracking-wide">
-            Story of communix
+            Story of <span className="text-orange-500">Commmunix</span>
           </h1>
           <p className="text-lg text-neutral-500 leading-8">
             At Commmunix, we started as a small business with a big dream. Our
@@ -37,7 +37,7 @@ const About = (props: Props) => {
       <div className="flex  flex-col-reverse sm:flex-row items-center gap-8">
         <div className="flex flex-col gap-4">
           <h1 className="text-xl font-bold leading-8 tracking-wide">
-            Our values at Commmunix
+            Our values at <span className="text-orange-500">Commmunix</span>
           </h1>
           <p className="text-lg text-neutral-500 leading-8">
             Our values are the foundation of everything we do. We believe in
@@ -67,7 +67,7 @@ const About = (props: Props) => {
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-xl font-bold leading-8 tracking-wide">
-            Our mission at Commmunix
+            Our mission at <span className="text-orange-500">Commmunix</span>
           </h1>
           <p className="text-lg text-neutral-500 leading-8">
             Our mission at Commmunix is to provide superior products and
